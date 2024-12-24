@@ -8,7 +8,7 @@ import Contact from './pages/Contact';
 
 const App = () => {
   return (
-    <Router>
+    <>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -16,7 +16,7 @@ const App = () => {
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-    </Router>
+    </>
   );
 };
 
