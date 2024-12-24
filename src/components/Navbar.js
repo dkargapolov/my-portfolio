@@ -1,22 +1,23 @@
 import React from 'react';
 import { Menu } from 'antd';
 import '../styles/Navbar.css';
+import { Link } from "react-router-dom";
 
 
 const Navbar = () => {
   return (
     <Menu mode="horizontal" theme="dark" style={{ width: '100%' }}>
       <Menu.Item key="home">
-        <a href="/">Главная</a>
+        <Link to="/">Главная</Link>
       </Menu.Item>
       <Menu.Item key="about">
-        <a href="/about">Обо мне</a>
+        <Link to="/about">Обо мне</Link>
       </Menu.Item>
       <Menu.Item key="projects">
-        <a href="/projects">Проекты</a>
+        <Link to="/projects">Проекты</Link>
       </Menu.Item>
       <Menu.Item key="contact">
-        <a href="/contact">Контакты</a>
+        <Link to="/contact">Контакты</Link>
       </Menu.Item>
     </Menu>
   );
